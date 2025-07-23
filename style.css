@@ -1,0 +1,361 @@
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{ 
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the body to IBM Plex Mono */
+    background-color: #ffffff00;
+    color:#c4bdbd;
+    line-height:1.6; /* Sets the line height for better readability */
+    padding: 20px; /* Adds padding around the body content */
+    font-size: 16px; /* Sets the base font size */
+}
+
+nav{
+    background-color: rgba(158, 151, 151, 0.8); /* Adds a semi-transparent dark background to the navigation bar */
+    position: sticky; /* Makes the navigation bar stick to the top of the page */
+    top: 0; /* Positions the sticky element at the top */
+    width: 100%; /* Makes the navigation bar span the full width of the page */
+    padding: 10px 0; /* Adds padding to the top and bottom of the navigation bar */
+    display: flex;
+    justify-content: center; /* Centers the navigation links */
+    gap: 20px; /* Adds space between the navigation links */
+    z-index: 1000; /* Ensures the navigation bar stays above other content */
+    box-shadow: 0 2px 6px rgba(141, 137, 137, 0.1); /* Adds a subtle shadow for depth */
+}
+nav a
+{
+  font-family: 'IBM Plex Mono', monospace; /* clean, code-like font */
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #00bfff; /* Changes the link color on hover */
+}
+
+header h1{ /*controls title: stephanie xia portfolio*/ 
+    font-family: 'Montserrat', sans-serif; /* Sets the font for the main heading */
+    font-size: 80px; /* Sets the font size for the main heading */
+    color: #d9bfbf; /* Sets the color for the main heading */
+    text-align: center; /* Centers the main heading */
+    padding: 10px 0; /* Adds padding to the top and bottom of the main heading, the 0 is for L R*/
+    margin-top: 60px; /* Moves the title down by 60px from the top */
+}
+.about-header {
+    font-family: 'Montserrat', sans-serif; /* Sets the font for the about header */
+    font-size: 40px; /* Sets the font size for the about header */
+    color: #bdbbbb; /* Sets the color for the about header */
+    text-align: center; /* Centers the about header */
+    margin-top: 40px; /* Adds space above the about header */
+    margin-bottom: 10px; /* Adds space below the about header */
+}
+
+.about-paragraph {
+    margin-top: 20px; /* Adds space above the paragraph */
+    margin-bottom: 20px; /* Adds space below the paragraph */
+    padding: 0px 400px; 
+    line-height: 2; /* Increases space between lines of text */
+    letter-spacing: 1px; /* Increases space between letters */
+}
+
+.profile-links-container {
+    display: flex; /* Arranges child elements side by side */
+    justify-content: center; /* Centers the links horizontally */
+    gap: 50px; /* Adds space between the links */
+    margin-top: 20px; /* Adds space above the container */
+}
+
+.profile-links-container a {
+    display: flex; /* Makes each link a flex container */
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center; /* Centers the text under the image */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the profile links container */
+    color: #c4bdbd; /* Sets the color for the profile links */
+    text-decoration: none; /* Removes underline from links inside the container */
+    margin-top: 60px; /* Adds space above each link */
+}
+
+.githubpng:hover, .linkedinpng:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.projects-header
+{
+    font-size: 50px; 
+}
+
+.project-card1 {
+  margin-left: 10px;
+  width: 47vw; 
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background-color: #201f229b; /* optional background */
+  flex-direction: row; /* stacks images and text vertically */
+}
+
+.project-card1:hover{
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for depth */
+    transform: translateY(-5px); /* Slightly lifts the card on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and lift effect */
+}
+.project-proactive-img1 {
+  width: 100%;         /* Leave a little space (2% on each side) */
+  border-radius: 16px; /* Keep your rounding */
+}
+
+.project-proactive-img1:hover {
+    transform: scale(1.02); /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.proactive-text1
+{
+    margin-top: 20px; /* Adds space above the proactive text */
+    padding-left:20px; /* Adds space to the left of the proactive text */
+    margin-bottom: 40px; /* Adds space below the proactive text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive text */
+    color: #b3afaf; /* Sets the color for the proactive text */
+    font-size: 23px; /* Sets the font size for the proactive text */
+}
+
+.proactive-description1{
+    display: block; /* Allows the description to be inline with the text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive description */
+    color: #b3afaf; /* Sets the color for the proactive description */
+    font-size: 20px; /* Sets the font size for the proactive description */
+    padding-left: 20px; /* Adds space to the left of the proactive description */
+
+}
+
+.project-card2 {
+  width: 47vw; 
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background-color: #201f229b; /* optional background */
+  flex-direction: row; /* stacks images and text vertically */
+}
+
+.project-card2:hover{
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for depth */
+    transform: translateY(-5px); /* Slightly lifts the card on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and lift effect */
+}
+.project-proactive-img2 {
+  width: 100%;         /* Leave a little space (2% on each side) */
+  border-radius: 16px; /* Keep your rounding */
+}
+
+.project-proactive-img2:hover {
+    transform: scale(1.02); /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.proactive-text2{
+    margin-top: 20px; /* Adds space above the proactive text */
+    padding-left:20px; /* Adds space to the left of the proactive text */
+    margin-bottom: 40px; /* Adds space below the proactive text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive text */
+    color: #b3afaf; /* Sets the color for the proactive text */
+    font-size: 23px; /* Sets the font size for the proactive text */
+}
+
+.proactive-description2{
+    display: block; /* Allows the description to be inline with the text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive description */
+    color: #b3afaf; /* Sets the color for the proactive description */
+    font-size: 20px; /* Sets the font size for the proactive description */
+    padding-left: 20px; /* Adds space to the left of the proactive description */
+}
+
+.projects-all
+{
+  display: flex;            /* Put children side by side */
+  flex-wrap: wrap;          /* Allow wrapping on smaller screens */
+  gap: 1.5rem;              /* Space between the two cards */
+  justify-content: space-between; /* Optional: adjust alignment */
+}
+
+.experiences-header {
+    font-size: 50px;
+    /*font-family: 'Montserrat', sans-serif; /* Sets the font for the experiences header */
+    margin-top: 30px; 
+}
+
+.project-card3 {
+  width: 47vw; 
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background-color: #201f229b; /* optional background */
+  flex-direction: row; /* stacks images and text vertically */
+}
+
+.project-card3:hover{
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for depth */
+    transform: translateY(-5px); /* Slightly lifts the card on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and lift effect */
+}
+.project-proactive-img3{
+  width: 100%;         /* Leave a little space (2% on each side) */
+  border-radius: 16px; /* Keep your rounding */
+}
+
+.project-proactive-img3:hover {
+    transform: scale(1.02); /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.proactive-text3{
+    margin-top: 20px; /* Adds space above the proactive text */
+    padding-left:20px; /* Adds space to the left of the proactive text */
+    margin-bottom: 40px; /* Adds space below the proactive text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive text */
+    color: #b3afaf; /* Sets the color for the proactive text */
+    font-size: 23px; /* Sets the font size for the proactive text */
+}
+
+.proactive-description3{
+    display: block; /* Allows the description to be inline with the text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive description */
+    color: #b3afaf; /* Sets the color for the proactive description */
+    font-size: 20px; /* Sets the font size for the proactive description */
+    padding-left: 20px; /* Adds space to the left of the proactive description */
+}
+
+.project-card4 {
+  width: 47vw; 
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background-color: #201f229b; /* optional background */
+  flex-direction: row; /* stacks images and text vertically */
+}
+
+.project-card4:hover{
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for depth */
+    transform: translateY(-5px); /* Slightly lifts the card on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and lift effect */
+}
+.project-proactive-img4 {
+  width: 100%;         /* Leave a little space (2% on each side) */
+  border-radius: 16px; /* Keep your rounding */
+}
+
+.project-proactive-img4:hover {
+    transform: scale(1.02); /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.proactive-text4{
+    margin-top: 20px; /* Adds space above the proactive text */
+    padding-left:20px; /* Adds space to the left of the proactive text */
+    margin-bottom: 40px; /* Adds space below the proactive text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive text */
+    color: #b3afaf; /* Sets the color for the proactive text */
+    font-size: 23px; /* Sets the font size for the proactive text */
+}
+
+.proactive-description4{
+    display: block; /* Allows the description to be inline with the text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive description */
+    color: #b3afaf; /* Sets the color for the proactive description */
+    font-size: 20px; /* Sets the font size for the proactive description */
+    padding-left: 20px; /* Adds space to the left of the proactive description */
+}
+
+.project-card5{
+  width: 47vw; 
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background-color: #201f229b; /* optional background */
+  flex-direction: row; /* stacks images and text vertically */
+}
+
+.project-card5:hover{
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for depth */
+    transform: translateY(-5px); /* Slightly lifts the card on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and lift effect */
+}
+.project-proactive-img5{
+  width: 100%;         /* Leave a little space (2% on each side) */
+  border-radius: 16px; /* Keep your rounding */
+}
+
+.project-proactive-img5:hover {
+    transform: scale(1.02); /* Slightly enlarges the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.proactive-text5{
+    margin-top: 20px; /* Adds space above the proactive text */
+    padding-left:20px; /* Adds space to the left of the proactive text */
+    margin-bottom: 40px; /* Adds space below the proactive text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive text */
+    color: #b3afaf; /* Sets the color for the proactive text */
+    font-size: 23px; /* Sets the font size for the proactive text */
+}
+
+.proactive-description5{
+    display: block; /* Allows the description to be inline with the text */
+    font-family: 'IBM Plex Mono', monospace; /* Sets the font for the proactive description */
+    color: #b3afaf; /* Sets the color for the proactive description */
+    font-size: 20px; /* Sets the font size for the proactive description */
+    padding-left: 20px; /* Adds space to the left of the proactive description */
+}
+
+.contact-info {
+  font-family: 'IBM Plex Mono', sans-serif; /* Uses a clean, readable font */
+  background-color: #ffffff; /* Light beige background for contrast */
+  padding: 20px; /* Adds space inside the form box */
+}
+
+input[name="username"], input[name="email"], input[name="subject"] {
+  display: flex; /* Aligns First and Last Name side by side */
+  gap: 20px; /* Adds spacing between the two input fields */
+  margin-bottom: 15px; /* Space below the name section */
+  font-family: 'IBM Plex Mono', sans-serif; /* Uses a clean, readable font */
+}
+
+label {
+  margin-bottom: 5px; /* Adds space between label and input */
+  font-size: 14px; /* Slightly smaller text for labels */
+  color: #080501; /* Muted brown/gray for label text */
+  font-family: 'IBM Plex Mono', sans-serif; /* Uses a clean, readable font */
+
+}
+
+input,
+textarea {
+  padding: 10px; /* Padding inside text boxes */
+  font-size: 14px; /* Ensures readable text */
+  border: 1px solid #000000; /* Gives form a subtle outline */
+  border-radius: 3px; /* Slightly rounded corners */
+  background-color: #fff; /* White input background */
+  resize: none; /* Prevents resizing of textarea */
+}
+
+textarea {
+  height: 100px; /* Makes message box taller by default */
+}
+
+button {
+  margin-top: 10px; /* Adds space above the button */
+  padding: 10px 20px; /* Makes button larger and easier to click */
+  background-color: #ffffff; /* Brownish-orange button background */
+  color: white; /* White text on the button */
+  border: none; /* Removes default border */
+  border-radius: 2px; /* Slight rounding on button edges */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 15px; /* Slightly larger button text */
+}
+
+button:hover {
+  background-color: #423d39; /* Darker shade when you hover over button */
+}

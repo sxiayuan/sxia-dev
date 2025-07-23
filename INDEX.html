@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Root element of the HTML document, language is English -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Stephanie Xia Portfolio</title> <!-- Title of the web page shown in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Links to an external CSS file for styling -->
+    <link href="https://fonts.google.com/specimen/IBM+Plex+Mono" rel="stylesheet"> <!-- Links to a Google font for styling -->
+</head>
+<!-- Sets a background image and makes it cover the whole page -->
+<body  style="background-image: url('https://www.ledr.com/colours/black.jpg'); background-size: cover;">
+    <!-- Navigation bar with links to other pages/sections -->
+    <nav>
+        <a href ="INDEX.html">//home</a>
+        <a href="#projects">//projects</a>
+        <a href="#experiences">//experience</a>
+        <a href="#blog">//blog</a>
+        <a href="#contact">//contact</a>
+    </nav>
+
+
+    <!-- Main heading of the page -->
+    <header>
+    <h1 class="header1-position">Stephanie Xia's <br> Portfolio</h1> <!-- Main heading with absolute positioning -->
+    <!-- Subtitle or motto -->
+    </header>
+    <section id="about"> 
+        <!-- Paragraph about the author with a class for custom spacing -->
+        <p class="about-paragraph">I’m a grade 11 student with a love for coding, problem-solving, and all things STEM. I enjoy learning new technologies and building meaningful projects that combine creativity with logic</p>
+    
+    <!-- Container for profile links to display them side by side -->
+        <div class="profile-links-container">
+            <a href="https://github.com/sxiayuan" target="_blank">
+                <img class="githubpng" src="images/Github-Logo.png" alt="Github" style="width:100px;">
+                <p class="profile-img-description">Github</p>
+            </a>
+            <a href="https://www.linkedin.com/in/stephanie-xia-growth/" target="_blank">
+                <img class="linkedinpng" src="images/Linkedin-Logo.png" alt="LinkedIn" style="width:100px;">
+                <p class="profile-img-description">LinkedIn</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="projects">
+
+        <h2 class="projects-header">Projects</h2> <!-- Subheading for projects section -->
+
+        <div class="projects-all"> 
+            <div class="project-card1"> 
+                <img class="project-proactive-img1" src="images/Proactive.png" alt="Proactive Project">
+                <p class="proactive-text1">IOS APP: Proactive</p>
+                <span class="proactive-description1"> A productivity app designed to help users manage their time and tasks effectively.</span>
+            </div>
+
+            <div class="project-card2"> 
+                <img class="project-proactive-img2" src="images/Thermostream.png" alt="Thermostream Project">
+                <p class="proactive-text2">CAD Design/Product Development: Thermostream</p>
+                <span class="proactive-description2"> An original invention that uses solar-power to heat up water for household appliances. </span>
+            </div>
+            <div class="project-card3"> 
+                <img class="project-proactive-img3" src="images/Thermostream.png" alt="Snowtrack Project">
+                <p class="proactive-text3">Website Design/Product Development: SnowTrack</p>
+                <span class="proactive-description3"> Comprehensive university application guide for Canadian students. </span>
+            </div>
+            <div class="project-card4"> 
+                <img class="project-proactive-img4" src="images/Thermostream.png" alt="LOL">
+                <p class="proactive-text4">Website Design/Product Development: SnowTrack</p>
+                <span class="proactive-description4"> Comprehensive university application guide for Canadian students. </span>
+            </div>
+
+            <div class="project-card5"> 
+                <img class="project-proactive-img5" src="images/Robotics.png" alt="Robotics VEX">
+                <p class="proactive-text5">Robotics Build/Engineering Notebook/Outreach: VEX Robotics</p>
+                <span class="proactive-description5"> Built a fully functional robot and wrote a comprehensive document for the 2025-2026 push back competition. </span>
+            </div>
+        </div>
+
+
+
+    <section id="experiences">
+        <h2 class="experiences-header">Experiences</h2> <!-- Subheading for projects section -->
+    </section>
+
+    <section id="blog">
+        <h2 class="blog-header">Blog</h2> <!-- Subheading for blog section -->
+    </section>
+
+    <section id="contact">
+        <h2 class="contact-header">Let's Work Together</h2> <!-- Subheading for contact section -->
+        <div class="contact-info">
+            <label>Your Name: </label>
+            <input type="text" name="username" placeholder="Enter your name"/>
+            <label>Your Email: </label>
+            <input type="email" name="email" placeholder="Enter your email"/>
+            <label>Your Message: </label>
+            <textarea name="message" placeholder="Enter your message"></textarea>
+            <button type="submit">Send</button>
+
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
