@@ -6,6 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const text4 = document.querySelector('.proactive-description4');
     const text5 = document.querySelector('.proactive-description5');
 
+    const text = "Stephanie is an innovative high school student dedicated to transforming limitations into possibilities — one project at a time.";
+let index = 0;
+const speed = 20;
+
+const element = document.querySelector(".about-paragraph");
+
+function typeWriter() {
+  if (index < text.length) {
+    element.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.onload = typeWriter;
     if (text1) {
         text1.addEventListener('mouseover', () => {
             text1.innerText = 'View Project-------                                                                 ';
@@ -38,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (text4) {
         text4.addEventListener('mouseover', () => {
-            text4.innerText = 'View Project -------                                             ';
+            text4.innerText = 'View Project                                              -------';
         });
 
         text4.addEventListener('mouseout', () => {
@@ -48,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (text5) {
         text5.addEventListener('mouseover', () => {
-            text5.innerText = 'View Project -------                                                                                      ';
+            text5.innerText = 'View Project                                                                                       -------';
         });
 
         text5.addEventListener('mouseout', () => {
@@ -56,4 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    
 });
+

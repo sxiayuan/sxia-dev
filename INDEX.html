@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
-    <title>Stephanie Xia Portfolio</title> <!-- Title of the web page shown in the browser tab -->
+    <title>Stephanie Xia's Portfolio</title> <!-- Title of the web page shown in the browser tab -->
     <link rel="stylesheet" href="style.css"> <!-- Links to an external CSS file for styling -->
-    <link href="https://fonts.google.com/specimen/IBM+Plex+Mono" rel="stylesheet"> <!-- Links to a Google font for styling -->
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 </head>
 <!-- Sets a background image and makes it cover the whole page -->
-<body  style="background-image: url('https://www.ledr.com/colours/black.jpg'); background-size: cover;">
+
+<body class= "background-img" style="background-image: url('images/background.png');">
     <!-- Navigation bar with links to other pages/sections -->
     <nav>
+        <p class="nav-name">Stephanie Xia </p>
+                <p class="nav-subdesc"> Creater</p>
+
         <a href ="INDEX.html">//home</a>
         <a href="#projects">//projects</a>
-        <a href="#experiences">//experience</a>
+        <a href="#skills">//skills</a>
         <a href="#blog">//blog</a>
         <a href="#contact">//contact</a>
+
     </nav>
 
 
     <!-- Main heading of the page -->
     <header>
-    <h1 class="header1-position">Stephanie Xia's <br> Portfolio</h1> <!-- Main heading with absolute positioning -->
+    <h1 class="header1-position">STEPHANIE XIA</h1> <!-- Main heading with absolute positioning -->
     <!-- Subtitle or motto -->
     </header>
     <section id="about"> 
         <!-- Paragraph about the author with a class for custom spacing -->
-        <p class="about-paragraph">I’m a grade 11 student with a love for coding, problem-solving, and all things STEM. I enjoy learning new technologies and building meaningful projects that combine creativity with logic</p>
+        <p class="about-paragraph"></p>
     
     <!-- Container for profile links to display them side by side -->
         <div class="profile-links-container">
@@ -43,7 +48,7 @@
 
     <section id="projects">
 
-        <h2 class="projects-header">Projects</h2> <!-- Subheading for projects section -->
+        <h2 class="projects-header">//P-r-o-j-e-c-t-s</h2> <!-- Subheading for projects section -->
 
         <div class="projects-all"> 
             <div class="project-card1"> 
@@ -58,7 +63,7 @@
                 <span class="proactive-description2"> An original invention that uses solar-power to heat up water for household appliances. </span>
             </div>
             <div class="project-card3"> 
-                <img class="project-proactive-img3" src="images/Thermostream.png" alt="Snowtrack Project">
+                <img class="project-proactive-img3" src="images/Snowtrack.png" alt="Snowtrack Project">
                 <p class="proactive-text3">Website Design/Product Development: SnowTrack</p>
                 <span class="proactive-description3"> Comprehensive university application guide for Canadian students. </span>
             </div>
@@ -75,30 +80,67 @@
             </div>
         </div>
 
+        </section>
+
+    <section id="skills">
+        <div class="skills-all">
+            <h2 class="skills-header">//Skills</h2> <!-- Subheading for projects section -->
+
+            <section class="skills1">
+                <img class="lan1" src="images/java.png" alt="java Logo" style="width:70px;"></img>
+                <img class="lan2" src="images/python.png" alt="python Logo" style="width:300px;"></img>
+                <img class="lan3" src="images/html.png" alt="html Logo" style="width:100px;"></img>
+                <img class="lan4" src="images/css.png" alt="css Logo" style="width:72px;"></img>
+                <img class="lan5" src="images/c++.png" alt="c++ Logo" style="width:80px;"></img>
 
 
-    <section id="experiences">
-        <h2 class="experiences-header">Experiences</h2> <!-- Subheading for projects section -->
+            </section>
+        </div>
     </section>
+
 
     <section id="blog">
-        <h2 class="blog-header">Blog</h2> <!-- Subheading for blog section -->
-    </section>
-
-    <section id="contact">
-        <h2 class="contact-header">Let's Work Together</h2> <!-- Subheading for contact section -->
-        <div class="contact-info">
-            <label>Your Name: </label>
-            <input type="text" name="username" placeholder="Enter your name"/>
-            <label>Your Email: </label>
-            <input type="email" name="email" placeholder="Enter your email"/>
-            <label>Your Message: </label>
-            <textarea name="message" placeholder="Enter your message"></textarea>
-            <button type="submit">Send</button>
+        <h2 class="blog-header">//Blog</h2> <!-- Subheading for blog section -->
+        <div class="blogs-all"> 
+            <div class="blog1">
+                <div> 
+                <p class="blog1-name">Starting a New Project can be Hard</p>
+                <p class="blog1-date">July 25th, 2025</p>
+                <p class="blog1-desc">Reflecting on a relatable struggles of a diciplined high school student starting her own projects, tripping on the noise of media, expectations and deadlines.</p>
+                </div>
+                <div>
+                     <img class="blog1-img" src="images/blog1.png" alt="blog1" style="width:500px;"></img>
+                </div>
+            </div>
 
         </div>
     </section>
 
+    <section id="contact">
+        <div class="contact-info">
+            <h2 class="contact-header">Let's Work Together</h2> <!-- Subheading for contact section -->
+         <div>
+        </div>
+            <div>
+            <label class="name-label">Your Name: </label>
+            <input type="text" name="username" placeholder="Enter your name"/>
+            <label class="email-label">Your Email: </label>
+            <input type="email" name="email" placeholder="Enter your email"/>
+            <label class="message-label">Your Message: </label>
+            <textarea name="message" placeholder="Enter your message"></textarea>
+            <button type="submit">Send</button>
+        </div>
+        <div>
+            <div class="contacts"
+            <p>Contact</p>
+            <p> ___________</p>
+            <p>stephaniexia2026@gmail.com</p>
+            </div>
+            <p class="contact-desc">@2025 Stephanie Xia. All rights reserved. <br> Made with macbook and Mango Green Teas (30% sugar, no ice).</p>
+        </div>
+    </section>
+
 <script src="script.js"></script>
+</div>
 </body>
 </html>
