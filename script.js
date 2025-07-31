@@ -57,7 +57,7 @@ window.onload = typeWriter;
         });
 
         text4.addEventListener('mouseout', () => {
-            text4.innerText = 'Comprehensive university application guide for Canadian students.';
+            text4.innerText = 'A single playered, three staged gobblin killing game with pixated UIs, crafted on Greenfoot';
         });
     }
 
